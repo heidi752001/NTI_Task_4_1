@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bd">
+    <h1 id="tst">Welcome</h1>
+    <button onclick="light()">light mode</button>
+    <button onclick="dark()">Dark mode</button>
+    <table>
+        <tr>
+            <td colspan="2">
+                <input type="radio" id="cl" name="bg" onclick="bg()">
+                <label for="bg">Background Color</label>
+                <input type="radio" id="mg" name="bg"  onclick="bg()">
+                <label for="bg">Background image</label>
+            </td>
+        </tr>
+        <tr id="grad">
+            <td colspan="2" id="gg" >
+                <input type="radio" id="lg" name="bmg">
+                <label for="bg">linear Gradient</label>
+                <input type="radio" id="rg" name="bmg">
+                <label for="bg">Radial Gradient</label>
+                <input type="radio" id="cg" name="bmg">
+                <label for="bg">conic Gradient</label> 
+            </td> 
+        </tr>
+        <tr>
+            <td>
+                <label id="frst">First color</label>
+            </td>
+            <td>
+                <input type="color" id="st">
+            </td>
+        </tr>
+        <tr>
+            <td > 
+                <label>Second color</label>
+            </td>
+            <td>
+                <input type="color" id="nd">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Third color</label>
+            </td>
+            <td>
+                <input type="color" id="rd">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Font color</label>
+            </td>
+            <td>
+                <input type="color" id="fc">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Font size</label>
+            </td>
+            <td>
+                <input type="range" id="fs" oninput="dis()">
+                <label id="num"></label>
+            </td>
+        </tr>
+        <tr >
+            <td>
+                <label>font family</label>
+            </td>
+            <td>
+                <select id="ff">
+                    <option>Times New Roman</option>
+                    <option>Arial</option>
+                    <option>Georgia</option>
+                </select>
+            </td> 
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="apply()">Apply Style</button>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
